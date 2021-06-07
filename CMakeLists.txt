@@ -120,9 +120,9 @@ add_subdirectory(src/cudpp)
 add_subdirectory(src/cudpp_hash)
 
 if (CUDPP_BUILD_APPLICATIONS)
-  add_subdirectory(apps/cudpp_testrig)
-  add_subdirectory(apps/cudpp_hash_testrig)
-  add_subdirectory(apps/simpleCUDPP)
+  #add_subdirectory(apps/cudpp_testrig)
+  #add_subdirectory(apps/cudpp_hash_testrig)
+  #add_subdirectory(apps/simpleCUDPP)
   #add_subdirectory(apps/satGL)
 endif (CUDPP_BUILD_APPLICATIONS)
 

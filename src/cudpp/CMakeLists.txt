@@ -68,20 +68,20 @@ set (CUHFILES
   )
 
 set(CUFILES
-  app/reduce_app.cu
-  app/compact_app.cu
-  app/compress_app.cu
-  app/listrank_app.cu
-  app/sa_app.cu
-  app/mergesort_app.cu
-  app/multisplit_app.cu
-  app/scan_app.cu
-  app/segmented_scan_app.cu
-  app/spmvmult_app.cu
-  app/stringsort_app.cu
-  app/radixsort_app.cu
-  app/rand_app.cu
-  app/tridiagonal_app.cu
+  #app/reduce_app.cu
+  #app/compact_app.cu
+  #app/compress_app.cu
+  #app/listrank_app.cu
+  #app/sa_app.cu
+  #app/mergesort_app.cu
+  #app/multisplit_app.cu
+  #app/scan_app.cu
+  #app/segmented_scan_app.cu
+  #app/spmvmult_app.cu
+  #app/stringsort_app.cu
+  #app/radixsort_app.cu
+  #app/rand_app.cu
+  #app/tridiagonal_app.cu
   ../../ext/moderngpu/src/mgpucontext.cu
   )
 
