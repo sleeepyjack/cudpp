@@ -139,7 +139,7 @@ cuda_add_library(cudpp_hash ${LIB_TYPE}
   ${CUHFILES}
   ${HFILES_PUBLIC}
   ${CUFILES}
-  OPTIONS ${GENCODE_SM20} ${VERBOSE_PTXAS}
+  OPTIONS ${GENCODE_SM50} ${VERBOSE_PTXAS}
   )
 
 target_link_libraries(cudpp_hash cudpp)
