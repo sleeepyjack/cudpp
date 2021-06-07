@@ -18,7 +18,7 @@ set(CCFILES
   cudpp.cpp
   cudpp_plan.cpp
   cudpp_manager.cpp
-  ${CMAKE_SOURCE_DIR}/ext/moderngpu/src/mgpuutil.cpp
+  ../../ext/moderngpu/src/mgpuutil.cpp
   )
 
 set (HFILES
@@ -82,12 +82,12 @@ set(CUFILES
   app/radixsort_app.cu
   app/rand_app.cu
   app/tridiagonal_app.cu
-  ${CMAKE_SOURCE_DIR}/ext/moderngpu/src/mgpucontext.cu
+  ../../ext/moderngpu/src/mgpucontext.cu
   )
 
 set(HFILES_PUBLIC
-  ${CMAKE_SOURCE_DIR}/include/cudpp.h
-  ${CMAKE_SOURCE_DIR}/include/cudpp_config.h
+  ../../include/cudpp.h
+  ../../include/cudpp_config.h
   )
 
 source_group("CUDA Source Files" FILES ${CUFILES})
@@ -119,9 +119,9 @@ set(GENCODE_SM50 -gencode=arch=compute_50,code=sm_50 -gencode=arch=compute_50,co
 #       "ON to generate code for Compute Capability 2.1 devices (e.g. NVS 4200M)"
 #       OFF)
 
-option(CUDPP_GENCODE_SM30
-       "ON to generate code for Compute Capability 3.0 devices (e.g. Tesla K10)"
-       ON)
+#option(CUDPP_GENCODE_SM30
+#       "ON to generate code for Compute Capability 3.0 devices (e.g. Tesla K10)"
+#       ON)
 
 option(CUDPP_GENCODE_SM35
        "ON to generate code for Compute Capability 3.5 devices (e.g. Tesla K20)"
@@ -129,7 +129,7 @@ option(CUDPP_GENCODE_SM35
 
 option(CUDPP_GENCODE_SM50
        "ON to generate code for Compute Capability 5.0 devices (e.g. GeForce GTX 750)"
-       OFF)
+       ON)
 
 if (CUDPP_GENCODE_SM12)
   set(GENCODE ${GENCODE} ${GENCODE_SM12})
