@@ -68,9 +68,9 @@ set(GENCODE_SM35 -gencode=arch=compute_35,code=sm_35 -gencode=arch=compute_35,co
 #       "ON to generate code for Compute Capability 2.0 devices (e.g. Tesla C2050)"
 #       OFF)
 
-option(CUDPP_GENCODE_SM30
-       "ON to generate code for Compute Capability 3.0 devices (e.g. Tesla K10)"
-       ON)
+#option(CUDPP_GENCODE_SM30
+#       "ON to generate code for Compute Capability 3.0 devices (e.g. Tesla K10)"
+#       ON)
 
 option(CUDPP_GENCODE_SM35
        "ON to generate code for Compute Capability 3.5 devices (e.g. Tesla K20)"
@@ -78,7 +78,7 @@ option(CUDPP_GENCODE_SM35
 
 option(CUDPP_GENCODE_SM50
        "ON to generate code for Compute Capability 5.0 devices (e.g. GeForce GTX 750)"
-       OFF)
+       ON)
 
 if (CUDPP_GENCODE_SM12)
   set(GENCODE ${GENCODE} ${GENCODE_SM12})
